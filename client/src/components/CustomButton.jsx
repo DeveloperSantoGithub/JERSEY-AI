@@ -1,5 +1,5 @@
 const CustomButton = () => {
-	return <div>CustomButton</div>;
+	return <div>Customizer</div>;
 };
 
 export default CustomButton;
