@@ -11,3 +11,4 @@
 //-->> valtio : New package that easily manage react state
 //-->> react-color : color picker
 //-->> framer-motion : cool animation
+//-->> tailwindcss : css styling
