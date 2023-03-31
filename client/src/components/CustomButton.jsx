@@ -1,6 +1,6 @@
 const CustomButton = ({ type, title, handleClick, customStyles }) => {
 	const generateStyle = (type) => {
-		if (condition) {
+		if (type === 'filled') {
 		} else {
 		}
 	};
