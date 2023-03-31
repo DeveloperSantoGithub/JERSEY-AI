@@ -12,3 +12,10 @@
 //-->> react-color : color picker
 //-->> framer-motion : cool animation
 //-->> tailwindcss : css styling
+
+//=> Step-3:
+//=> Adding Files:
+//-->> Public
+//-->> Assets
+//-->> Default Styling
+//-->> Config
