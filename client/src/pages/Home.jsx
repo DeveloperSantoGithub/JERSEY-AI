@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 import {
 	headContainerAnimation,
+	headContentAnimation,
 	headTextAnimation,
 	slideAnimation,
 } from '../config/motion';
@@ -30,8 +31,11 @@ const Home = () => {
 							</h1>
 						</motion.div>
 
-						<motion.div>
-							<p>
+						<motion.div
+							className="flex flex-col gap-5"
+							{...headContentAnimation}
+						>
+							<p className="max-w-lg font-normal text-gray-600 text-base">
 								Using the <strong>JERSEY.AI</strong> 3D customization tool, you
 								can design your own <strong>one-of-a-kind</strong> shirt. Create
 								your own look by using your{' '}
