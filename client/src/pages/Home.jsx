@@ -32,9 +32,9 @@ const Home = () => {
 
 						<motion.div>
 							<p>
-								Using the <strong>JERSEY.AI</strong> 3D tool, you can design
-								your own <strong>one-of-a-kind</strong> shirt. Create your own
-								look by using your{' '}
+								Using the <strong>JERSEY.AI</strong> 3D customization tool, you
+								can design your own <strong>one-of-a-kind</strong> shirt. Create
+								your own look by using your{' '}
 								<strong className=" text-orange-500">creativity.</strong>
 							</p>
 						</motion.div>
