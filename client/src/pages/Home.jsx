@@ -7,6 +7,7 @@ import {
 	slideAnimation,
 } from '../config/motion';
 
+import CustomButton from '../components/CustomButton';
 import state from '../store';
 
 const Home = () => {
@@ -41,6 +42,8 @@ const Home = () => {
 								your own look by using your{' '}
 								<strong className=" text-orange-500">creativity.</strong>
 							</p>
+
+							<CustomButton />
 						</motion.div>
 					</motion.div>
 				</motion.div>
