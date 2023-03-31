@@ -1,5 +1,19 @@
-const CustomButton = () => {
-	return <div>Customizer</div>;
+const CustomButton = ({ type, title, handleClick, customStyles }) => {
+	const generateStyle = (type) => {
+		if (condition) {
+		} else {
+		}
+	};
+
+	return (
+		<button
+			onClick={handleClick}
+			className={`px-2 py-1.5 flex-1 rounded-md  ${customStyles}`}
+			style={generateStyle(type)}
+		>
+			{title}
+		</button>
+	);
 };
 
 export default CustomButton;
