@@ -7,7 +7,7 @@
 //-->> three : 3D threeJS lib
 //-->> @react-three/fiber : React render for threeJS lib
 //-->> @react-three/drei : Useful Addons for react-three/fiber
-//-->> maath
-//-->> valtio
-//-->> react-color
-//-->> framer-motion
+//-->> maath : Math helper those are going to use in threeJS
+//-->> valtio : New package that easily manage react state
+//-->> react-color : color picker
+//-->> framer-motion : cool animation
