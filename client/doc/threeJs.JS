@@ -15,6 +15,7 @@
 //-->> Create Shirt.jsx : 3D model
 
 //=>[*] Create 3D Model:
+//==> Shirt:
 //>-->> Inside of Shirt.jsx:
 
 //-->> All imports:
@@ -36,9 +37,13 @@
 //-->> working with mesh:
 //-->> mesh properties: castShadow, geometry, material, material-roughness, dispose
 
-//-->> inside of <mesh></mesh>:
+//>-->> inside of <mesh></mesh>:
+//-->> set texture based on isTexture state value:
+//-->> with <Decal/>
+//-->> <Decal/> has some properties on it:
+//-->> position={[x,y,z]}, rotation={[x,y,z]}, scale={1}, map={texture that going to be set}
 
-//=> (*) Setup Camera:
+//==> [*] Setup Camera:
 //>-->> Inside of CameraRig.jsx:
 
 //-->> All imports:
@@ -61,8 +66,8 @@
 //-->> Now all of the easing code put into the :
 //-->> useFrame() Hook: Because useFrame hook extcute code on every frame render
 
-//-->>For Rotation: easing.dampE(current: Euler, targetPosition, time, delta: different )
+//-->>For Rotation (dampE): easing.dampE(current: Euler, targetPosition, time, delta: different )
 
 //>-->> (*) Set Model Camera Position:
 
-//-->> For Camera Position: easing.damp3(currrent: Vector3, targetPosition, time, delta: different)
+//-->> For Camera Position (damp3): easing.damp3(currrent: Vector3, targetPosition, time, delta: different)
