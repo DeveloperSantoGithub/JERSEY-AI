@@ -18,7 +18,7 @@ const Shirt = () => {
 
 	//=> Apply Color Smoothly:
 	useFrame((state, delta) =>
-		easing.dampC(materials.lambert1.color, snap.color, 0.25, delta),
+		easing.dampC(materials.lambert1.color, snap.shirtColor, 0.25, delta),
 	);
 
 	return (
