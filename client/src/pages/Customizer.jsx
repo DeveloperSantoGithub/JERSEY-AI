@@ -37,7 +37,7 @@ const Customizer = () => {
 			case 'colorpicker':
 				return <ColorPicker />;
 			case 'filepicker':
-				return <FilePicker file={file} setFile={setFile} />;
+				return <FilePicker file={file} setFile={setFile} readFile={readFile} />;
 			case 'aipicker':
 				return <AiPicker />;
 			default:
@@ -48,8 +48,10 @@ const Customizer = () => {
 	const handleDecals = (type, result) => {
 		const decalType = DecalTypes[type];
 
+		//=> Set New Uploaded (logo and Decal) Files:
 		state[decalType.stateProperty] = result;
 
+		//=> Add and Remove (logo and Decal) Files and Toggle Filter Btns:
 		if (!activeFilterTab[decalType.filterTab]) {
 			handleActiveFilterTab(decalType.filterTab);
 		}
