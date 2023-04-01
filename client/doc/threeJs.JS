@@ -97,6 +97,14 @@
 //-->> import {useFrame} from '@react-three/fiber';
 //-->> import {AccumulativeShadows, RandomizedLight} from '@react-three/drei';
 
+/* 
+<AccumulativeShadows>
+<RandomizedLight/>
+</AccumulativeShadows>
+*/
+
+//-->> AccumulativeShadows Properties:
+
 //=> [###] Model Size Customize and fixed Dropshadow:
 //-->> Inside of Canvas in index.jsx file:
 //-->> Add Some Properties:
