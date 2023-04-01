@@ -43,6 +43,7 @@
 //-->> with <Decal/>
 //-->> <Decal/> has some properties on it:
 /* -->> 
+
 <Decal
 1.position={[x,y,z]}, 
 2.rotation={[x,y,z]}, 

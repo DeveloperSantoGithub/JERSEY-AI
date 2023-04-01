@@ -17,7 +17,9 @@ const Shirt = () => {
 	const fullTexture = useTexture(snap.fullDecal);
 
 	//=> Apply Color Smoothly:
-	useFrame((state, delta) => easing.dampC(state.current.color));
+	useFrame((state, delta) =>
+		easing.dampC(materials.lambert1.color, snap.color, 0.25, delta),
+	);
 
 	return (
 		<group>
