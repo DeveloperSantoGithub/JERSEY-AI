@@ -14,7 +14,12 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
 			: { backgroundColor: 'transparent', opacity: 1 };
 
 	return (
-		<div key={tab.name} className={defaultTabStyles} style={activeTabStyles}>
+		<div
+			key={tab.name}
+			className={defaultTabStyles}
+			style={activeTabStyles}
+			onClick={handleClick}
+		>
 			<img
 				src={tab.icon}
 				alt={tab.name}
