@@ -15,6 +15,8 @@
 //-->> Create Shirt.jsx : 3D model
 
 //=>[*] Create 3D Model:
+//>-->> Inside of Shirt.jsx:
+
 //-->> All imports:
 //-->> import {easing} from 'maath';
 //-->> import {useSnapshot} from 'valtio';
@@ -37,4 +39,10 @@
 //-->> inside of <mesh></mesh>:
 
 //=> (*) Setup Camera:
-//-->> Into the CameraRig File:
+//>-->> Inside of CameraRig.jsx:
+
+//-->> All imports:
+//-->> import {easing} from 'maath';
+//-->> import {useSnapshot} from 'valtio';
+//-->> import {useFrame} from '@react-three/fiber';
+//-->> import state from '../store'
