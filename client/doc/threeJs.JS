@@ -22,6 +22,7 @@
 //-->> import {easing} from 'maath';
 //-->> import {useSnapshot} from 'valtio';
 //-->> import {useFrame (execute code on every render frame )} from '@react-three/fiber';
+
 //-->> import {Decal (for Mesh or texture) ,  useGLTF (for use 3D model), useTexture } from '@react-three/drei';
 //-->> import state from '../store'
 
@@ -55,6 +56,8 @@
 
 //=> Apply color smoothly:
 //-->>For Color: easing.dampC() into the useFrame() hook
+
+//-->> casing.dampC(current: Color, colorRepresentation, time , delta )
 
 //==> [*] Setup Camera:
 //>-->> Inside of CameraRig.jsx:
