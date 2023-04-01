@@ -57,6 +57,7 @@ const Customizer = () => {
 		}
 	};
 
+	//=> Toggle Filter Btns:
 	const handleActiveFilterTab = (tabName) => {
 		switch (tabName) {
 			case 'logoShirt':
@@ -71,6 +72,7 @@ const Customizer = () => {
 		}
 	};
 
+	//=> Read New Uploaded Files:
 	const readFile = (type) => {
 		reader(file).then((result) => {
 			handleDecals(type, result);
