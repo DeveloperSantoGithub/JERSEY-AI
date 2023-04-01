@@ -45,7 +45,14 @@ const Customizer = () => {
 		}
 	};
 
-	const handleDecals = (type, result) => {};
+	const handleDecals = (type, result) => {
+		const decalType = DecalTypes[type];
+
+		state[decalType.stateProperty] = result;
+
+		if (!activeFilterTab[decalType.filterTab]) {
+		}
+	};
 
 	const readFile = (type) => {
 		reader(file).then((result) => {
