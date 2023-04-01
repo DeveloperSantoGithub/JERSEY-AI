@@ -1,5 +1,8 @@
 //=>Create Canvas Model:
 
+//=> Step-0:
+//-->> Create index.jsx : It's our Canvas
+
 //=> Step-1:
 //-->> import {canvas} from '@react-three/fiber';
 //-->> import { Environment, Center } from '@react-three/drei';
