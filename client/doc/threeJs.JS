@@ -23,4 +23,8 @@
 //-->> import state from '../store'
 
 //=> (*) import 3D model:
-//-->>
+//-->> const { nodes, materials } = useGLTF('/shirt_baked.glb');
+
+//-->> Add Texture:
+//-->> const logoTexture = useTexture(snap.logoDecal);
+//-->> const fullTexture = useTexture(snap.fullDecal);
