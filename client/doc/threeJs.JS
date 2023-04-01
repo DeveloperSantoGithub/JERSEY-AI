@@ -97,11 +97,20 @@
 //-->> import {useFrame} from '@react-three/fiber';
 //-->> import {AccumulativeShadows, RandomizedLight} from '@react-three/drei';
 
-//=> [###] Model Size Customize:
+//=> [###] Model Size Customize and fixed Dropshadow:
 //-->> Inside of Canvas in index.jsx file:
 //-->> Add Some Properties:
 /* 
+/--> shadows
 
+/--> camera = {
+  {
+  position:[0,0,0],
+  fov (fill of view) : 25 
+  }
+}
+
+/--> 
 
 
 */
