@@ -10,6 +10,7 @@ const Shirt = () => {
 	const snap = useSnapshot(state);
 
 	//=> Import Model:
+	const { nodes, materials } = useGLTF('/shirt_baked.glb');
 
 	return <div>Shirt</div>;
 };
