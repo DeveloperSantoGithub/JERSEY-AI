@@ -61,7 +61,8 @@
 //-->> Now all of the easing code put into the :
 //-->> useFrame() Hook: Because useFrame hook extcute code on every frame render
 
-//-->> easing.dampE(current, targetPosition, time, diferent)
+//-->>For Rotation: easing.dampE(current: Euler, targetPosition, time, delta: different )
 
-//>-->> (*) Set Model Rotation Smoother:
-//
+//>-->> (*) Set Model Camera Position:
+
+//-->> For Camera Position: easing.damp3(currrent: Vector3, targetPosition, time, delta: different)
