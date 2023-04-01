@@ -20,7 +20,13 @@ const Customizer = () => {
 	const snap = useSnapshot(state);
 
 	return (
-		<AnimatePresence>{!snap.intro && <>Customizer Page</>}</AnimatePresence>
+		<AnimatePresence>
+			{!snap.intro && (
+				<>
+					<motion.div></motion.div>
+				</>
+			)}
+		</AnimatePresence>
 	);
 };
 
