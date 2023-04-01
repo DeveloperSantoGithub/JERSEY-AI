@@ -18,7 +18,7 @@
 //==> Shirt:
 //>-->> Inside of Shirt.jsx:
 
-//-->> All imports:
+//>-->> All imports:
 //-->> import {easing} from 'maath';
 //-->> import {useSnapshot} from 'valtio';
 //-->> import {useFrame (execute code on every render frame )} from '@react-three/fiber';
@@ -63,7 +63,7 @@
 //==> [###] Setup Camera:
 //>-->> Inside of CameraRig.jsx:
 
-//-->> All imports:
+//>-->> All imports:
 //-->> import {easing} from 'maath';
 //-->> import {useSnapshot} from 'valtio';
 //-->> import {useFrame} from '@react-three/fiber';
@@ -90,3 +90,9 @@
 //-->> For Camera Position (damp3): easing.damp3(currrent: Vector3, targetPosition, time, delta: different),
 
 //==>> [###] Create Backdrop:
+// >-->> Inside Backdrop.jsx:
+
+//>-->> All imports:
+//-->> import {easing} from 'maath';
+//-->> import {useFrame} from '@react-three/fiber';
+//-->> import {AccumulativeShadows, RandomizedLight} from '@react-three/drei';
