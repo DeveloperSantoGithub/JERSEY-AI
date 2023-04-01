@@ -55,4 +55,5 @@
 //=> (*) Customize camera:
 
 //>-->>  Set Model Rotation:
+//-->> use maath: easing: (define properties)
 //-->>
