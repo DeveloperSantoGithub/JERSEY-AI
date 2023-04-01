@@ -41,7 +41,20 @@
 //-->> set texture based on isTexture state value:
 //-->> with <Decal/>
 //-->> <Decal/> has some properties on it:
-//-->> position={[x,y,z]}, rotation={[x,y,z]}, scale={1}, map={texture that going to be set}
+/* -->> 
+<Decal
+1.position={[x,y,z]}, 
+2.rotation={[x,y,z]}, 
+3.scale={1}, 
+4.map={texture that going to be set},
+5.map-anisotropy={x} : set the qulity of the texture
+5.depthTest={boolen} : set on top of other texture
+7. depthWrite={true}
+/>
+*/
+
+//=> Apply color smoothly:
+//-->>For Color: easing.dampC() into the useFrame() hook
 
 //==> [*] Setup Camera:
 //>-->> Inside of CameraRig.jsx:
@@ -70,4 +83,4 @@
 
 //>-->> (*) Set Model Camera Position:
 
-//-->> For Camera Position (damp3): easing.damp3(currrent: Vector3, targetPosition, time, delta: different)
+//-->> For Camera Position (damp3): easing.damp3(currrent: Vector3, targetPosition, time, delta: different),
