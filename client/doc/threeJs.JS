@@ -19,7 +19,7 @@
 //-->> import {easing} from 'maath';
 //-->> import {useSnapshot} from 'valtio';
 //-->> import {useFrame} from '@react-three/fiber';
-//-->> import {Decal (for Mash or texture) ,  useGLTF (for use 3D model), useTexture } from '@react-three/drei';
+//-->> import {Decal (for Mesh or texture) ,  useGLTF (for use 3D model), useTexture } from '@react-three/drei';
 //-->> import state from '../store'
 
 //=> (*) import 3D model:
@@ -28,3 +28,13 @@
 //-->> Add Texture:
 //-->> const logoTexture = useTexture(snap.logoDecal);
 //-->> const fullTexture = useTexture(snap.fullDecal);
+
+//=> (*) Display Model:
+//-->> inside of <group></group>:
+//-->> working with mesh:
+//-->> mesh properties: castShadow, geometry, material, material-roughness, dispose
+
+//-->> inside of <mesh></mesh>:
+
+//=> (*) Setup Camera:
+//-->> Into the CameraRig File:
