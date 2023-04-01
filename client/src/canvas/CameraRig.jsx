@@ -8,9 +8,14 @@ const CameraRig = ({ children }) => {
 	const group = useRef();
 	const snap = useSnapshot(state);
 
-	//=> Set Model Rotation Smoother:
-
 	useFrame((state, delta) => {
+		const isBreakpoint = window.innerWidth <= 1260;
+		const isMobile = window.innerWidth <= 600;
+
+		//=> Set Initial Position of the Model:
+		let targetPosition = [];
+
+		//=> Set Model Rotation Smoother:
 		easing.dampE(
 			group.current.rotation,
 			[state.pointer.y / 10, -state.pointer.x / 5, 0],
