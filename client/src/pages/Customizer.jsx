@@ -55,6 +55,20 @@ const Customizer = () => {
 		}
 	};
 
+	const handleActiveFilterTab = (tabName) => {
+		switch (tabName) {
+			case 'logoShirt':
+				state.isLogoTexture = !activeFilterTab[tabName];
+				break;
+			case 'stylishShirt':
+				state.isFullTexture = !activeFilterTab[tabName];
+				break;
+			default:
+				state.isLogoTexture = true;
+				state.isFullTexture = false;
+		}
+	};
+
 	const readFile = (type) => {
 		reader(file).then((result) => {
 			handleDecals(type, result);
