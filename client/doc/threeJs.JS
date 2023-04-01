@@ -21,3 +21,6 @@
 //-->> import {useFrame} from '@react-three/fiber';
 //-->> import {Decal (for Mash or texture) ,  useGLTF (for use 3D model), useTexture } from '@react-three/drei';
 //-->> import state from '../store'
+
+//=> (*) import 3D model:
+//-->>
