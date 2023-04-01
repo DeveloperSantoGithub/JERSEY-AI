@@ -127,8 +127,6 @@
 /--> intensity={0.55}
 /--> ambient={0.25}
 /--> position={[5, 5, -10]}
-
-
 */
 
 //=> [###] Model Size Customize and fixed Dropshadow:
