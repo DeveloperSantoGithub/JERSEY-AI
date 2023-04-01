@@ -56,4 +56,7 @@
 
 //>-->>  Set Model Rotation:
 //-->> use maath: easing: (define properties)
-//-->>
+//-->> easing.damE( group.current.rotation, [x: state.pointer.y /10, y: -state.pointer.x / 5, z: 0], time: .25, different: delta )
+
+//-->> Now all of the easing code put into the :
+//-->> useFrame() Hook: Because useFrame hook extcute code on every frame render
