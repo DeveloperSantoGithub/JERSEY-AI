@@ -23,6 +23,7 @@ const Customizer = () => {
 		<AnimatePresence>
 			{!snap.intro && (
 				<>
+					{/* Editor Tabs: */}
 					<motion.div
 						className="absolute top-0 left-0 z-10"
 						{...slideAnimation('left')}
@@ -36,6 +37,7 @@ const Customizer = () => {
 						</div>
 					</motion.div>
 
+					{/* Back Button: */}
 					<motion.div
 						className="absolute z-10 top-5 right-5"
 						{...fadeAnimation}
@@ -48,6 +50,7 @@ const Customizer = () => {
 						/>
 					</motion.div>
 
+					{/* Filter Tabs:  */}
 					<motion.div
 						className="filtertabs-container"
 						{...slideAnimation('up')}
