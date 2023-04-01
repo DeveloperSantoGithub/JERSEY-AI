@@ -105,7 +105,17 @@
 
 //-->> AccumulativeShadows Properties:
 /* 
+/--> temporal: smooth out the shadows azes over time
 
+/--> frames={60} : it means frame is going to render 60 frame.
+
+/--> alphaTest={.85} : set the transprency of the shadow
+
+/--> scale={10} :
+
+/--> rotation={[Math.PI / 2, 0, 0]}
+
+/--> position={[0,0,0]}
 
 */
 
