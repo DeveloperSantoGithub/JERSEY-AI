@@ -21,8 +21,10 @@ const Shirt = () => {
 		easing.dampC(materials.lambert1.color, snap.shirtColor, 0.25, delta),
 	);
 
+	const stateString = JSON.stringify(snap);
+
 	return (
-		<group>
+		<group key={stateString}>
 			<mesh
 				castShadow
 				geometry={nodes.T_Shirt_male.geometry}
