@@ -119,6 +119,18 @@
 
 */
 
+//-->> RandomizedLight Properties:
+
+/*
+/--> amount={4} : light amount
+/--> radius={9} 
+/--> intensity={0.55}
+/--> ambient={0.25}
+/--> position={[5, 5, -10]}
+
+
+*/
+
 //=> [###] Model Size Customize and fixed Dropshadow:
 //-->> Inside of Canvas in index.jsx file:
 //-->> Add Some Properties:
