@@ -61,7 +61,9 @@ const Customizer = () => {
 								tab={tab}
 								isFilterTab
 								isActiveTab=""
-								handleClick={() => {}}
+								handleClick={() => {
+									handleActiveTab;
+								}}
 							/>
 						))}
 					</motion.div>
