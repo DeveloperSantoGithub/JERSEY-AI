@@ -46,3 +46,10 @@
 //-->> import {useSnapshot} from 'valtio';
 //-->> import {useFrame} from '@react-three/fiber';
 //-->> import state from '../store'
+
+//=> Initial:
+//-->> Recive all children with 'children' props
+//-->> Use useRef(): const group = useRef();
+//-->> take state: cosnt snap = useSnapshot(state);
+
+//=> (*) Customize camera:
