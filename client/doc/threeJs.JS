@@ -14,7 +14,7 @@
 
 //-->> Create Shirt.jsx : 3D model
 
-//=>[*] Create 3D Model:
+//==>[###] Create 3D Model:
 //==> Shirt:
 //>-->> Inside of Shirt.jsx:
 
@@ -60,7 +60,7 @@
 
 //-->> casing.dampC(current: Color, colorRepresentation, time , delta )
 
-//==> [*] Setup Camera:
+//==> [###] Setup Camera:
 //>-->> Inside of CameraRig.jsx:
 
 //-->> All imports:
@@ -88,3 +88,5 @@
 //>-->> (*) Set Model Camera Position:
 
 //-->> For Camera Position (damp3): easing.damp3(currrent: Vector3, targetPosition, time, delta: different),
+
+//==>> [###] Create Backdrop:
