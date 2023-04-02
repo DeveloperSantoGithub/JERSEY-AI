@@ -25,8 +25,8 @@ const Customizer = () => {
 	const [file, setFile] = useState('');
 
 	//=> For AiPicker:
-	const [prompt, setPrompt] = useState('');
-	const [generatingImg, setGeneratingImg] = useState(false);
+	// const [prompt, setPrompt] = useState('');
+	// const [generatingImg, setGeneratingImg] = useState(false);
 
 	//=> For Tabs:
 	const [activeEditorTab, setActiveEditorTab] = useState('');
@@ -35,22 +35,26 @@ const Customizer = () => {
 		stylishShirt: false,
 	});
 
+	const [activePicker, setActivePicker] = useState(false);
+
 	//=> Tab Content Show Based on Active Tab:
 	const generateTabContent = () => {
 		switch (activeEditorTab) {
 			case 'colorpicker':
-				return <ColorPicker />;
+				if (activePicker) return <ColorPicker />;
+				break;
+
 			case 'filepicker':
-				return <FilePicker file={file} setFile={setFile} readFile={readFile} />;
+				if (activePicker)
+					return (
+						<FilePicker file={file} setFile={setFile} readFile={readFile} />
+					);
+				break;
+
 			case 'aipicker':
-				return (
-					<AiPicker
-					// prompt={prompt}
-					// setPrompt={setPrompt}
-					// generatingImg={generatingImg}
-					// handlePromptSubmit={handlePromptSubmit}
-					/>
-				);
+				if (activePicker) return <AiPicker />;
+				break;
+
 			default:
 				return null;
 		}
@@ -142,7 +146,10 @@ const Customizer = () => {
 									<Tab
 										key={tab.name}
 										tab={tab}
-										handleClick={() => setActiveEditorTab(tab.name)}
+										handleClick={() => {
+											setActiveEditorTab(tab.name);
+											setActivePicker(!activePicker);
+										}}
 									/>
 								))}
 
