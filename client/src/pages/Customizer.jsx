@@ -45,7 +45,7 @@ const Customizer = () => {
 						setAiPrompt={setAiPrompt}
 						generatingImg={generatingImg}
 						setGeneratingImg={setGeneratingImg}
-						handleSubmit={handleSubmit}
+						handleAiPromptSubmit={handleAiPromptSubmit}
 					/>
 				);
 			default:
@@ -53,7 +53,7 @@ const Customizer = () => {
 		}
 	};
 
-	const handleSubmit = async (type) => {
+	const handleAiPromptSubmit = async (type) => {
 		if (!aiPrompt) return alert('Please enter a prompt!');
 
 		try {
