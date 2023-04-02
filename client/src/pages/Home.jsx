@@ -21,9 +21,9 @@ const Home = () => {
 				<motion.div className="home" {...slideAnimation('left')}>
 					<motion.div {...slideAnimation('down')}>
 						<img
-							src="./threejs.png"
+							src="./logo-1.png"
 							alt="logo"
-							className="w-8 h-8 object-contain"
+							className="w-full  h-9 object-contain"
 						/>
 					</motion.div>
 
