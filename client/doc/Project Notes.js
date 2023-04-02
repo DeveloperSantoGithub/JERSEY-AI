@@ -45,3 +45,6 @@
 //-->> mongoose : Node. js-based Object Data Modeling (ODM) library for MongoDB
 //-->> nodemon :  It monitors your project directory and automatically restarts your node application when it detects any changes.
 //-->> openai
+
+//=> Create File:
+//-->> Create: A new index.js file into the server dir.
