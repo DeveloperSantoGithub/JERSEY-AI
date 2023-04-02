@@ -17,7 +17,7 @@ const openai = new OpenAIApi(config);
 
 //=> Requests:
 router.route('/').get((req, res) => {
-	res.status(200).json({ message: 'This it from route: /' });
+	res.status(200).json({ message: 'DALL.E Route' });
 });
 
 router.route('/').post(async (req, res) => {
@@ -35,7 +35,7 @@ router.route('/').post(async (req, res) => {
 
 		res.status(200).json({ photo: image });
 	} catch (error) {
-		console.log(error);
+		console.error(error);
 		res.status(500).json({ message: 'Something went wrong' });
 	}
 });

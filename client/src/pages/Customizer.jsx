@@ -106,6 +106,7 @@ const Customizer = () => {
 			default:
 				state.isLogoTexture = true;
 				state.isFullTexture = false;
+				break;
 		}
 
 		//=> Set Filter Tab Updated value to the state:
@@ -176,6 +177,15 @@ const Customizer = () => {
 								handleClick={() => handleActiveFilterTab(tab.name)}
 							/>
 						))}
+
+						{/* Download button */}
+						<button className="download-btn" onClick={downloadCanvasToImage}>
+							<img
+								src={download}
+								alt="download_image"
+								className="w-3/5 h-3/5 object-contain"
+							/>
+						</button>
 					</motion.div>
 				</>
 			)}
