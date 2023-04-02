@@ -10,6 +10,7 @@ import {
 import { CustomButton } from '../components';
 
 import state from '../store';
+import CopyRight from '../components/CopyRight';
 
 const Home = () => {
 	const snap = useSnapshot(state);
@@ -41,7 +42,7 @@ const Home = () => {
 								Using the <strong>JERSEY.3D</strong> customization tool, you can
 								design your own <strong>one-of-a-kind</strong> shirt. Create
 								your own look by using your{' '}
-								<strong className=" text-orange-500">creativity.</strong>
+								<strong className=" text-emerald-500">creativity.</strong>
 							</p>
 
 							<CustomButton
@@ -50,6 +51,10 @@ const Home = () => {
 								handleClick={() => (state.intro = false)}
 								customStyles="w-fit px-4 py-2.5 font-bold text-sm"
 							/>
+
+							<div className="felx justify-end pt-20 bg-red-200">
+								<CopyRight />
+							</div>
 						</motion.div>
 					</motion.div>
 				</motion.div>
