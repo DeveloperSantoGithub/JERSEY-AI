@@ -70,6 +70,14 @@ const Customizer = () => {
 				state.isLogoTexture = true;
 				state.isFullTexture = false;
 		}
+
+		//=> Set Filter Tab Updated value to the state:
+		setActiveFilterTab((prevState) => {
+			return {
+				...prevState,
+				[tabName]: !prevState[tabName],
+			};
+		});
 	};
 
 	//=> Read New Uploaded Files:
@@ -127,8 +135,8 @@ const Customizer = () => {
 								key={tab.name}
 								tab={tab}
 								isFilterTab
-								isActiveTab=""
-								handleClick={() => handleActiveTab}
+								isActiveTab={activeFilterTab[tab.name]}
+								handleClick={() => handleActiveFilterTab(tab.name)}
 							/>
 						))}
 					</motion.div>
