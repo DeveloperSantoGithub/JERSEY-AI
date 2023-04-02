@@ -5,14 +5,14 @@ function AiPicker({ prompt, setPrompt, generatingImg, handlePromptSubmit }) {
 	return (
 		<div className="aipicker-container">
 			<textarea
-				placeholder="Ask AI..."
+				placeholder="Notice!: We are currently turning off this AI function for some reason. Enjoy the other features!!"
 				rows={5}
 				value={prompt}
-				onChange={(e) => setPrompt(e.target.value)}
-				className="aipicker-textarea"
+				// onChange={(e) => setPrompt(e.target.value)}
+				className="aipicker-textarea placeholder-red-400 font-bold"
 			/>
 
-			<div className="flex flex-wrap gap-3">
+			{/* <div className="flex flex-wrap gap-3">
 				{generatingImg ? (
 					<CustomButton
 						type="outline"
@@ -35,7 +35,7 @@ function AiPicker({ prompt, setPrompt, generatingImg, handlePromptSubmit }) {
 						/>
 					</>
 				)}
-			</div>
+			</div> */}
 		</div>
 	);
 }
