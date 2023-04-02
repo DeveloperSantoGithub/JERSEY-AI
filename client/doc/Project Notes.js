@@ -20,3 +20,6 @@
 //-->> Default Styling
 //-->> Config
 // #FFB30D
+
+//==>> Server Setup:
+//-->> npm init -y
