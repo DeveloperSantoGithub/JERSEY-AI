@@ -5,7 +5,7 @@ import { RiLinkedinFill } from 'react-icons/ri';
 function CopyRight() {
 	return (
 		<div className="flex flex-row justify-start items-center w-52 gap-1">
-			<div className="bg-emerald-300 glassmorhism px-1 rounded-xl border border-black">
+			<div className="bg-emerald-300 glassmorhism px-1 rounded-xl ">
 				<h2 className="flex items-center font-bold">
 					<CgCopyright className="text-lg" />
 					<a
