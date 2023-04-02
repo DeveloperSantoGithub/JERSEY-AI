@@ -1,6 +1,7 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
+import dalleRoutes from './routes/dalle.routes.js';
 
 //==> Setup:
 //=> Environment Variable:
@@ -15,6 +16,9 @@ app.use(cors());
 
 //* Payload limit:
 app.use(express.json({ limit: '50mb' }));
+
+//* Dalle.E Route:
+app.use('/api/v1/dalle', dalleRoutes);
 
 //* Demo Route:
 app.get('/', (req, res) => {
