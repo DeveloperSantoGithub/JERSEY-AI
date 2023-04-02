@@ -48,3 +48,11 @@
 
 //=> Create File:
 //-->> Create: A new index.js file into the server dir.
+//-->> Config server : Environment Variable, Express App, Middleware : Cross origin, payload limit, Demo route, port
+
+//-->> After congif server:
+
+//=> Folder Structure:
+//-->> Create : routes dir
+//-->> inside 'routes' dir :
+//-->> Create :  dalle.routes.js file
