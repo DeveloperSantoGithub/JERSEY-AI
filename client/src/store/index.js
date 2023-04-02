@@ -8,7 +8,7 @@ const state = proxy({
 	isLogoTexture: true,
 	isFullTexture: false,
 	logoDecal: './hand.png',
-	fullDecal: './screen.png',
+	fullDecal: './screen.jpg',
 });
 
 export default state;
