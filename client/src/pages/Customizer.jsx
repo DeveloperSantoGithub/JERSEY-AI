@@ -20,11 +20,14 @@ const Customizer = () => {
 	const snap = useSnapshot(state);
 
 	//=> States:
+	//=> For FilePicker:
 	const [file, setFile] = useState('');
 
-	const [aiPrompt, setAiPrompt] = useState('');
+	//=> For AiPicker:
+	const [prompt, setPrompt] = useState('');
 	const [generatingImg, setGeneratingImg] = useState(false);
 
+	//=> For Tabs:
 	const [activeEditorTab, setActiveEditorTab] = useState('');
 	const [activeFilterTab, setActiveFilterTab] = useState({
 		logoShirt: true,
@@ -41,10 +44,10 @@ const Customizer = () => {
 			case 'aipicker':
 				return (
 					<AiPicker
-						prompt={aiPrompt}
-						setPrompt={setAiPrompt}
+						prompt={prompt}
+						setPrompt={setPrompt}
 						generatingImg={generatingImg}
-						handleAiPromptSubmit={handleAiPromptSubmit}
+						handlePromptSubmit={handlePromptSubmit}
 					/>
 				);
 			default:
@@ -52,8 +55,8 @@ const Customizer = () => {
 		}
 	};
 
-	const handleAiPromptSubmit = async (type) => {
-		if (!aiPrompt) return alert('Please enter a prompt!');
+	const handlePromptSubmit = async (type) => {
+		if (!prompt) return alert('Please enter a prompt!');
 
 		try {
 			// Ai call
