@@ -7,7 +7,7 @@ const state = proxy({
 	shirtColor: '#F27166',
 	isLogoTexture: true,
 	isFullTexture: false,
-	logoDecal: './react.png',
+	logoDecal: './threejs.png',
 	fullDecal: './threejs.png',
 });
 
