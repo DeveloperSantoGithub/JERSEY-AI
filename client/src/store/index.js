@@ -4,10 +4,10 @@ import { proxy } from 'valtio';
 const state = proxy({
 	intro: true,
 	color: '#0e0e0e',
-	shirtColor: '#F27166',
+	shirtColor: '#011826',
 	isLogoTexture: true,
 	isFullTexture: false,
-	logoDecal: './threejs.png',
+	logoDecal: './hand.png',
 	fullDecal: './threejs.png',
 });
 
