@@ -39,9 +39,30 @@ const Customizer = () => {
 			case 'filepicker':
 				return <FilePicker file={file} setFile={setFile} readFile={readFile} />;
 			case 'aipicker':
-				return <AiPicker />;
+				return (
+					<AiPicker
+						aiPrompt={aiPrompt}
+						setAiPrompt={setAiPrompt}
+						generatingImg={generatingImg}
+						setGeneratingImg={setGeneratingImg}
+						handleSubmit={handleSubmit}
+					/>
+				);
 			default:
 				return null;
+		}
+	};
+
+	const handleSubmit = async (type) => {
+		if (!aiPrompt) return alert('Please enter a prompt!');
+
+		try {
+			// Ai call
+		} catch (error) {
+			alert(error);
+		} finally {
+			setGeneratingImg(false);
+			setActiveEditorTab('');
 		}
 	};
 
