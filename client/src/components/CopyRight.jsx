@@ -4,10 +4,10 @@ import { RiLinkedinFill } from 'react-icons/ri';
 
 function CopyRight() {
 	return (
-		<div className="copy-right-tags">
-			<div className="copy-rights">
-				<h2>
-					<CgCopyright className="i-copy" />
+		<div className="flex flex-row justify-start items-center w-52 gap-1">
+			<div className="bg-emerald-300 glassmorhism px-1 rounded-xl border border-black">
+				<h2 className="flex items-center font-bold">
+					<CgCopyright className="text-lg" />
 					<a
 						href="https://developersanto.netlify.app/"
 						target="_blank"
@@ -17,14 +17,14 @@ function CopyRight() {
 					</a>
 				</h2>
 			</div>
-			<div className="links">
+			<div className="flex gap-1">
 				<a
 					className="github"
 					href="https://github.com/DeveloperSantoGithub"
 					target="_blank"
 					rel="noreferrer"
 				>
-					<AiFillGithub className="i-github" />
+					<AiFillGithub className="bg-emerald-300 p-1 text-2xl rounded-full" />
 				</a>
 				<a
 					className="linkedin"
@@ -32,7 +32,7 @@ function CopyRight() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					<RiLinkedinFill className="i-linkedin" />
+					<RiLinkedinFill className="bg-emerald-300 p-1 text-2xl rounded-full" />
 				</a>
 			</div>
 		</div>
