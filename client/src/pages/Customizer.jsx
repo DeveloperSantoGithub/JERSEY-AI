@@ -41,10 +41,9 @@ const Customizer = () => {
 			case 'aipicker':
 				return (
 					<AiPicker
-						aiPrompt={aiPrompt}
-						setAiPrompt={setAiPrompt}
+						prompt={aiPrompt}
+						setPrompt={setAiPrompt}
 						generatingImg={generatingImg}
-						setGeneratingImg={setGeneratingImg}
 						handleAiPromptSubmit={handleAiPromptSubmit}
 					/>
 				);
